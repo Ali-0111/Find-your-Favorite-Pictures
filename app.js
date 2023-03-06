@@ -26,11 +26,21 @@ function generateImgFromData(data) {
         const img = document.createElement('div');
         img.className = 'gallery-img'
         img.innerHTML = `
-        <img class='test' src="${element.src.large}" alt="loading">
+        <div class="flex-row download">
         <p>Photo by ${element.photographer}</p>
+        <a href="${element.src.original}" target="_blank">
+        Download
+        </a>
+        </div>
+        <img class='test' src="${element.src.large}" alt="loading">
         `
         gallery.appendChild(img);
     });
+}
+
+function clear() {
+    gallery.innerHTML = ""
+    searchInput.value = ""
 }
 
 async function photo() {
@@ -40,8 +50,9 @@ async function photo() {
 
 async function searchPhoto(asks) {
     const data = await fetchApi(
-        `https://api.pexels.com/v1/search?query=${asks}&page=2&per_page=15`)   
-        generateImgFromData(data)
+        `https://api.pexels.com/v1/search?query=${asks}&page=2`)
+    clear() 
+    generateImgFromData(data)
 }
 
 window.onload = ()=> {
