@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="main-head">
+    <header class="main-head flex-col">
         <a id="logo" href="./index.html">Photon</a>
     </header>
-    <main>
-        <form class="search">
+    <main class="flex-col">
+        <form class="search flex-row">
             <input type="text" class="search-input">
             <button type="submit">Search</button>
         </form>
-        <div class="gallery"></div>
+        <div class="gallery flex-col"></div>
     </main>
     <script src="./app.js"></script>
 </body>
