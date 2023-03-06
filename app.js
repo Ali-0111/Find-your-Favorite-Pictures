@@ -12,9 +12,7 @@ searchForm.addEventListener('submit',(event)=> {
 async function fetchApi(url) {
     const datafetch = await fetch(url,
     {
-        method: "GET",
         headers: {
-            Accept: "application/json",
             Authorization: key
         }
     }
