@@ -13,6 +13,11 @@ body {
     font-size: 2rem;
 }
 
+#logo {
+    font-size: 4rem;
+    font-family: 'Mina', sans-serif;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -48,6 +53,7 @@ body {
 .search {
     padding: 0.5rem;
     width: 30%;
+    margin-bottom: 10rem;
 }
 
 .search input {
