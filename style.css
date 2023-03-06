@@ -42,7 +42,7 @@ body {
 }
 
 .search input {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     border: 2px solid rgb(69, 69, 202);
     width: 100%;
     font-size: 2rem;
@@ -55,6 +55,15 @@ body {
     border: 2px solid rgb(69, 69, 202);
     color: white;
     background: rgb(69, 69, 202);
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     font-size: 2rem;
+}
+
+.gallery-img {
+    border: 1px solid rgb(172, 170, 170);
+    margin-bottom: 0.5rem;
+}
+.test {
+    width: 40rem;
+    height: 40rem;
 }
