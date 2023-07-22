@@ -14,7 +14,7 @@ body {
 }
 
 #logo {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Mina', sans-serif;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .search {
   padding: 0.5rem;
-  width: 30%;
+  width: 60%;
   margin-bottom: 10rem;
 }
 
@@ -112,4 +112,14 @@ body {
 
 .more-btn:active {
   border: 2px solid red;
+}
+
+@media screen and (min-width: 640px ){
+  #logo {
+    font-size: 4rem;
+  }
+
+  .search {
+    width: 50%;
+  }
 }
